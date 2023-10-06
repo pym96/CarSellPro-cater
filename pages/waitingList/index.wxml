@@ -1,0 +1,8 @@
+<view class="left">正在赶来的司机：</view>
+  <view wx:for="{{list}}" wx:key="{{index}}">
+    <view class="customer-item" bindtap="settings">
+      <image class="car-image" src="{{item.carImage}}" mode="aspectFit"></image>
+      <view class="car-number">车牌：{{item.carNumeber}}</view>
+      <view class="phone-number">车主电话：{{item.carOwnerPhoneNumber}}</view>
+    </view>
+  </view>

@@ -1,0 +1,33 @@
+<view style="width:100%; background: node;">
+	
+	<view>
+		<view wx:for="{{list}}" wx:key="{{index}}">
+    		<view class="customer-item" bindtap="settings">
+      			<image class="car-image" src="{{item.carImage}}" mode="aspectFit"></image>
+      			<view class="car-number">车牌：{{item.carNumeber}}</view>
+      			<view class="phone-number">车主电话：{{item.carOwnerPhoneNumber}}</view>
+    		</view>
+			<button class="invite" bindtap="invite">补货邀请</button>
+  		</view>	
+	</view>
+
+	<!-- 得到车主近期的销售数据 -->
+
+	<view>
+		<!-- 显示剩余的货物量 -->
+		<!-- <view wx:for=""> -->
+		<view class="left">货物剩余：</view>
+			<view wx:for="{{soldsList}}" wx:key="index" class="leftGoods" data-title="{{item.title}}">
+				<image class="item-icon" src="{{item.icon}}"> </image>
+				<view class="item-title">{{item.title}}</view>
+				<view class="item-sold">{{item.left}}</view>	
+			</view>
+		<!-- </view> -->
+	</view>
+
+
+	<!-- 该车主涉嫌违规操作，是否强制停机售卖柜 -->
+	<view class="left" style="color:red">该车主违规：</view>
+	<button class="draw_btn_end" bindtap="shutDoorDown">强制关机</button>
+
+</view>

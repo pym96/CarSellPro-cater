@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<!-- pages/customer-list/customer-list.wxml -->
+<view class="customer-list">
+	<view class="container">
+		<!-- 
+			调用地图接口:
+			  1. 显示进货地点  
+			  2. 记录商品卖出时地理位置，并及时回传销售订单信息至中央服务器
+		-->
+		<view class="map">
+			<map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}" 
+				 markers="{{markers}}" show-location="true" style="width: 100%; height: 100%;">
+			</map>
+		</view>
+	</view>
+  
+  <view class="left">附近司机：</view>
+  <view wx:for="{{list}}" wx:key="{{index}}">
+    <view class="customer-item" bindtap="settings">
+      <image class="car-image" src="{{item.carImage}}" mode="aspectFit"></image>
+      <view class="car-number">车牌：{{item.carNumeber}}</view>
+      <view class="phone-number">车主电话：{{item.carOwnerPhoneNumber}}</view>
+    </view>
+  </view>
+</view>

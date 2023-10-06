@@ -1,0 +1,47 @@
+/* pages/carOwnerEnroll/index.wxss *//* pages/carOwnerEnroll/index.wxss */
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100rpx;
+  }
+  
+  .input-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 50rpx;
+  }
+  
+  .input-group input {
+	flex: 1;
+	height: 80rpx;
+	font-size: 36rpx;
+	padding: 0 40rpx;
+	border: none;
+	border-bottom: 2rpx solid #ccc;
+  }
+  
+  .input-group button {
+	height: 80rpx;
+	font-size: 36rpx;
+	color: #fff;
+	background-color: #007aff;
+	border: none;
+	border-radius: 10rpx;
+	padding: 0 40rpx;
+	margin-left: 20rpx;
+  }
+  
+  .btn {
+	height: 80rpx;
+	font-size: 36rpx;
+	color: #fff;
+	background-color: #007aff;
+	border: none;
+	border-radius: 10rpx;
+	padding: 0 40rpx;
+	margin-top: 50rpx;
+  }
+  

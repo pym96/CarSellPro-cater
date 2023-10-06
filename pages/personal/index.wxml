@@ -1,0 +1,43 @@
+<!-- 导入登陆界面的前端模板 -->
+<import src="../template/index" />
+<view class="container">
+  <!-- 背景图片区域 -->
+  <view class="bgcImage">
+    <!-- 用户信息区域 -->
+    <view class="userInfo">
+      <!-- 头像 -->
+      <view wx:if="{{app.globalData.data.isLogin}}" class="userAvatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view wx:else="{{!app.globalData.data.isLogin}}" class="userAvatar">
+        <image src="images/icon_default.png" mode="aspectFit"></image>
+      </view>
+
+
+      <view class="userInfoTxt">
+        <view class="userName">
+          <open-data type="userNickName"></open-data>
+        </view>
+        <view wx::if="{{app.isLogin}}"  class="userInfo">
+          <view class="guestAcademy" style="font-size: 20px; font-weight: 400; margin-top: auto;"> {{data.tel}}</view>
+        </view>
+        <view wx::elif="{{!app.isLogin}}"  class="userInfo">
+          <button style="border: none; margin-left: -30px; margin-top:-10px;" plain="true" bindtap="login">一键登陆</button>
+        </view>
+      </view>
+    </view>
+    <!-- Dialog -->
+    <view class="userInfoDialog">
+      <block wx:for="{{settingDetails}}" wx:key="index">
+        <template is="userInfo_item" data="{{item}}">
+        </template>
+      </block>
+    </view>
+  </view>
+  <!--  关于我们...Dialog -->
+  <view class="more">
+    <block wx:for="{{list}}" wx:key="index">
+      <template is="navigate_item" data="{{item, right:'images/right .png'}}"></template>
+    </block>
+  </view> 
+</view>

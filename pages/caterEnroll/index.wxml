@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="input-group">
+    <input type="number" placeholder="请输入手机号码" bindinput="onPhoneNumberInput" />
+    <button type="primary" disabled="{{!canSendCode}}" bindtap="onSendCode">发送验证码</button>
+  </view>
+  <view class="input-group">
+    <input type="number" placeholder="请输入验证码" bindinput="onCodeInput" />
+  </view>
+  <button class="btn" type="primary" disabled="{{!canRegister}}" bindtap="onRegister">注册</button>
+</view>

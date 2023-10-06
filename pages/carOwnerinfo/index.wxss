@@ -1,0 +1,179 @@
+/* pages/carOwnerinfo/index.wxss *//**index.wxss**/
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #aaa;
+  }
+  
+  .userinfo-avatar {
+	overflow: hidden;
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+  }
+  
+  .usermotto {
+	margin-top: 200px;
+  }
+  
+  page {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+  }
+  
+  .circle-box {
+	text-align: center;
+	margin-top: 10vw;
+  }
+  
+  .circle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+  }
+  
+  .draw_circle{
+	position:absolute;
+	align-items: center;
+	margin-left: 37vw;
+  }
+  
+  .draw_btn {
+	width:50vw;
+	position: absolute;
+	top: 50vw;
+	right: 0;
+	left: 0;
+	margin: auto;
+	border: 1px #000 solid;
+	border-radius: 5vw;
+  }
+  
+  .draw_btn_end {
+	  width: 35vw;
+	  position: absolute;
+	  top: 148vw;
+	  right: 0;
+	  left: 0;
+	  margin: auto;
+	  border: 1px #000 solid;
+	  border-radius: 5vw;
+	}
+
+	.invite {
+		width: 25vw;
+		position: absolute;
+		margin-left: 20px;
+		top: 50vw;
+		right: 0;
+		left: 0;
+		margin: auto;
+		border: 1px #000 solid;
+		border-radius: 5vw;
+	  }
+	
+  
+  .circle-progress-outter-circle{
+	border-radius: 50%;
+	box-sizing: border-box;
+  }
+  
+  .circle-progress-half-rect{
+	position: absolute;
+	overflow: hidden;
+  }
+  
+  .right-rect{
+	top: 0;
+	right: 0;
+  }
+  
+  .left-rect{
+	top: 0;
+	left: 0;
+  }
+  
+  .circle-progress-half-circle{
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: absolute;   
+  }
+  
+  .right-circle{
+	top:0;  
+	right: 0;
+	transform: rotate(-45deg);
+  }
+  
+  .left-circle{
+	top:0;  
+	left: 0;
+	transform: rotate(-45deg);
+  }
+  
+  .title{
+	margin-top: 45px;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 700;
+	background: -webkit-linear-gradient(left,#5bd9e2,#ef33b1);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+
+  .car-number {
+	font-size: 34rpx;
+	color:black;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .phone-number {
+	font-size: 40rpx;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(7, 6, 6);
+  }
+
+  .left{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight: bold;
+}
+
+.leftGoods{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+	margin:0 20px;
+	margin-top: 10px;
+	widows: 650rpx;
+	height:100rpx;
+	background-color: #fff;
+	border: 1rpx solid #ccc;
+	border-radius: 10rpx;
+	box-shadow: #ccc 0 0 5rpx 2rpx;
+	color:rgb(106,106,206);
+}
+
+.item-icon {
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+  }
+  
+  .item-sold {
+	font-size: 28rpx;
+	color: #666;
+	margin-right: 20rpx;
+  }
+  
+  .item-title {
+	font-size: 36rpx;
+	color: #333;
+  }

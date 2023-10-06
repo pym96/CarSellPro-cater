@@ -1,0 +1,44 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/logs/logs",
+		"pages/personal/index",
+		"pages/waitingList/index",
+		"pages/inputRecord/index",
+		"pages/caterEnroll/index",
+		"pages/carOwnerinfo/index",
+		"pages/feedback/index"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "Weixin",
+		"navigationBarTextStyle": "black"
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "小程序需要获取您的位置信息"
+		},
+		"scope.camera": {
+			"desc": "使用摄像头扫描二维码"
+		}
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "进货信息",
+				"iconPath": "/images/tabbar/homepage.png",
+				"selectedIconPath": "/images/tabbar/homepage.png"
+			},
+			{
+				"pagePath": "pages/personal/index",
+				"text": "我的",
+				"iconPath": "images/tabbar/personally.png",
+				"selectedIconPath": "images/tabbar/personally.png"
+			}
+		]
+	}
+}
